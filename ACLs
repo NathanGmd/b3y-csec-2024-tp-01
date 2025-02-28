@@ -1,0 +1,205 @@
+# file: .
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:admins:r-x
+group:sysadmins:r-x
+group:artists:r-x
+group:devs:r-x
+group:rh:r-x
+group:nginx:r-x
+mask::r-x
+other::---
+
+# file: projects
+# owner: root
+# group: root
+user::rwx
+group::r-x
+group:managers:rwx
+group:admins:r-x
+group:sysadmins:r-x
+group:artists:r-x
+group:devs:r-x
+group:rh:r-x
+group:nginx:r-x
+mask::rwx
+other::---
+
+# file: projects/README.docx
+# owner: root
+# group: root
+user::rwx
+group::r--
+group:managers:r-x
+group:admins:r-x
+group:sysadmins:r-x
+group:artists:r-x
+group:devs:r-x
+group:rh:r-x
+group:nginx:r-x
+mask::r-x
+other::---
+
+# file: projects/the_zoo
+# owner: root
+# group: root
+user::rwx
+group::r-x
+group:managers:r-x
+group:artists:rwx
+group:devs:rwx
+group:suha:rwx
+mask::rwx
+other::---
+
+# file: projects/the_zoo/ideas.docx
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:artists:rwx
+group:devs:r-x
+group:suha:rwx
+mask::rwx
+other::---
+
+# file: projects/website
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:artists:r-x
+group:devs:rwx
+group:daniel:rwx
+group:alysha:rwx
+group:rose:rwx
+group:nginx:r-x
+mask::rwx
+other::---
+
+# file: projects/website/index.html
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:artists:r-x
+group:devs:rwx
+group:daniel:rwx
+group:alysha:rwx
+group:nginx:r-x
+mask::rwx
+other::---
+
+# file: projects/client_data
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:artists:r-x
+group:devs:r-x
+group:rh:rwx
+group:suha:rwx
+mask::rwx
+other::---
+
+# file: projects/client_data/client1
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:rh:r-x
+group:grace:rwx
+group:oliver:rwx
+mask::rwx
+other::---
+
+# file: projects/client_data/client1/data.docx
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:rh:r-x
+group:grace:rwx
+group:oliver:rwx
+mask::rwx
+other::---
+
+# file: projects/client_data/client2
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:rh:r-x
+group:noah:rwx
+group:grace:rwx
+group:lucia:rwx
+mask::rwx
+other::---
+
+# file: projects/client_data/client2/data.docx
+# owner: root
+# group: root
+user::rwx
+group::---
+group:managers:r-x
+group:rh:r-x
+group:grace:rwx
+group:oliver:rwx
+mask::rwx
+other::---
+
+# file: projects/zoo_app
+# owner: root
+# group: root
+user::rwx
+group::---
+group:suha:rwx
+group:sadia:rwx
+group:jakub:r-x
+mask::rwx
+other::---
+
+# file: projects/zoo_app/zoo_app
+# owner: sadia
+# group: root
+user::rwx
+group::---
+group:suha:rwx
+group:sadia:rwx
+group:jakub:r-x
+mask::rwx
+other::---
+
+# file: conf
+# owner: root
+# group: root
+user::rwx
+group::---
+group:admins:rwx
+group:sysadmins:rwx
+group:daniel:rwx
+group:rose:r-x
+mask::rwx
+other::---
+
+# file: conf/test.conf
+# owner: root
+# group: root
+user::rwx
+group::---
+group:admins:rwx
+group:sysadmins:rwx
+group:daniel:rwx
+group:rose:r-x
+mask::rwx
+other::---

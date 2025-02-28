@@ -21,6 +21,6 @@ public (active)
 
 # Part II : PAM
 
-[Fichier de configuration pwquality.conf]([https://github.com/USER/REPO/blob/main/script.sh](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/pwquality.conf))
+[Fichier de configuration pwquality.conf](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/pwquality.conf)
 
 # Part III : OpenSSH

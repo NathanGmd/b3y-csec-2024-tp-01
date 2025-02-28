@@ -1,0 +1,33 @@
+total 0
+drwxr-x---+   4 root root   34 Feb 27 13:42 data
+total 0
+drwxrwx---+ 2 root root 23 Feb 27 13:42 conf
+drwxrwx---+ 6 root root 89 Feb 27 15:48 projects
+total 0
+drwxrwx---+ 4 root root 36 Feb 27 13:46 client_data
+-rwxr-x---+ 1 root root  0 Feb 27 13:42 README.docx
+drwxrwx---+ 2 root root 24 Feb 27 16:36 the_zoo
+drwxrwx---+ 2 root root 24 Feb 27 13:45 website
+drwxrwx---+ 2 root root 21 Feb 27 13:43 zoo_app
+-rwxr-x---+ 1 root root 0 Feb 27 13:42 ./projects/README.docx
+total 0
+-rwxrwx---+ 1 root root 0 Feb 27 13:44 ideas.docx
+-rwxrwx---+ 1 root root 0 Feb 27 13:44 ./projects/the_zoo/ideas.docx
+total 0
+-rwxrwx---+ 1 root root 0 Feb 27 13:45 index.html
+-rwxrwx---+ 1 root root 0 Feb 27 13:45 ./projects/website/index.html
+total 0
+drwxrwx---+ 2 root root 23 Feb 27 13:45 client1
+drwxrwx---+ 2 root root 23 Feb 27 13:46 client2
+total 0
+-rwxrwx---+ 1 root root 0 Feb 27 13:45 data.docx
+-rwxrwx---+ 1 root root 0 Feb 27 13:45 ./projects/client_data/client1/data.docx
+total 0
+-rwxrwx---+ 1 root root 0 Feb 27 13:46 data.docx
+-rwxrwx---+ 1 root root 0 Feb 27 13:46 ./projects/client_data/client2/data.docx
+total 0
+-rwxrwx---+ 1 sadia root 0 Feb 27 13:43 zoo_app
+-rwxrwx---+ 1 sadia root 0 Feb 27 13:43 ./projects/zoo_app/zoo_app
+total 0
+-rwxrwx---+ 1 root root 0 Feb 27 13:42 test.conf
+-rwxrwx---+ 1 root root 0 Feb 27 13:42 ./conf/test.conf

@@ -24,3 +24,17 @@ public (active)
 [Fichier de configuration pwquality.conf](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/pwquality.conf)
 
 # Part III : OpenSSH
+
+[Fichier de configuration sshs_config](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/sshd_config)
+
+# Part IV : Gestion d'utilisateurs
+
+```
+while :; do
+    pass=$(tr -dc 'A-Za-z0-9!@#$%^&*()_+' < /dev/urandom | head -c 14)
+    if [[ "$pass" =~ [A-Z] ]] && [[ "$pass" =~ [a-z] ]] && [[ "$pass" =~ [0-9] ]] && [[ "$pass" =~ [[:punct:]] ]]; then
+        echo "Mot de passe généré : $pass"
+        break
+    fi
+done
+```

@@ -38,3 +38,7 @@ while :; do
     fi
 done
 ```
+
+[Droits Posix](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/droits-posix)
+[Access Control Lists](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/ACLs)
+[Attributes](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/attributes)

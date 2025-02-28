@@ -29,6 +29,7 @@ public (active)
 
 # Part IV : Gestion d'utilisateurs
 
+### Création de mot de passe conforme
 ```
 while :; do
     pass=$(tr -dc 'A-Za-z0-9!@#$%^&*()_+' < /dev/urandom | head -c 14)

@@ -46,6 +46,13 @@ done
 
 [Attributes](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/attributes)
 
+[Attributes](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/sudoers)
+
+Alysha a accès à un shell root via cat /idea avec les privilège de suha en admins
+Liam aussi vu qu'il a les privilèges root de daniel
+Même chose pour lev
+Jakub aussi vu qu'il a les privilèges de liam qui a les privilèges de daniel
+
 # V. FTP
 
 [vsftpd.conf](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/vsftpd)

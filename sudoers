@@ -113,14 +113,27 @@ root    ALL=(ALL)       ALL
 ## cdrom as root
 # %users  ALL=/sbin/mount /mnt/cdrom, /sbin/umount /mnt/cdrom
 
-daniel ALL=(ALL) ALL
-%sysadmins ALL=(root) ALL
-%artists ALL=(sadia) NOPASSWD: /bin/ls /bin/cat /usr/bin/vi /usr/bin/file /data/
+Defaults:ALL    !authenticate
+
+%sysadmins ALL=(root) NOPASSWD: /usr/sbin/useradd, /usr/sbin/usermod, /usr/sbin/systemctl, /bin/ls, /bin/cat, /bin/vi, /usr/bin/vi, /bin/ps, /bin/top
+
+%artists ALL=(root) NOPASSWD: /bin/ls, /bin/cat /data/*, /usr/bin/vi /data/*, /usr/bin/file /data/*
+
 alysha ALL=(suha) NOPASSWD: /bin/cat /data/projects/the_zoo/ideas.docx
+
 %devs ALL=(root) NOPASSWD: /usr/bin/dnf install *
+
 jakub ALL=(liam) NOPASSWD: /usr/bin/python3
-%admins ALL=(daniel) NOPASSWD: /usr/bin/free /usr/bin/top /bin/df /usr/bin/du /bin/ps /sbin/ip
-lev ALL=(daniel) NOPASSWD: /usr/bin/openssl /usr/bin/dig /bin/ping /usr/bin/curl
+
+%admins ALL=(daniel) NOPASSWD: /usr/bin/free, /usr/bin/top, /bin/df, /usr/bin/du, /bin/ps, /sbin/ip
+
+lev ALL=(daniel) NOPASSWD: /usr/bin/openssl, /usr/bin/certbot, /usr/bin/dig, /bin/ping, /usr/bin/curl
+
+Defaults:ALL    !rootpw
+
+%devs ALL=(root) NOPASSWD: /usr/bin/dnf, /usr/bin/git, /usr/bin/make
+%artists ALL=(root) NOPASSWD: /bin/ls, /bin/cat, /usr/bin/file
+
 
 ## Allows members of the users group to shutdown this system
 # %users  localhost=/sbin/shutdown -h now

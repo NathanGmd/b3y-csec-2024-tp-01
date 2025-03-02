@@ -49,7 +49,7 @@ connect_from_port_20=YES
 #
 # You may override where the log file goes if you like. The default is shown
 # below.
-xferlog_file=/var/log/xferlog
+#xferlog_file=/var/log/xferlog
 #
 # If you want, you can have your log file in standard ftpd xferlog format.
 # Note that the default log file location is /var/log/xferlog in this case.
@@ -97,7 +97,7 @@ xferlog_std_format=YES
 # (Warning! chroot'ing can be very dangerous. If using chroot, make sure that
 # the user does not have write access to the top level directory within the
 # chroot)
-chroot_local_user=YES
+#chroot_local_user=YES
 #chroot_list_enable=YES
 # (default follows)
 #chroot_list_file=/etc/vsftpd/chroot_list
@@ -111,7 +111,7 @@ chroot_local_user=YES
 # When "listen" directive is enabled, vsftpd runs in standalone mode and
 # listens on IPv4 sockets. This directive cannot be used in conjunction
 # with the listen_ipv6 directive.
-listen=YES
+listen=NO
 #
 # This directive enables listening on IPv6 sockets. By default, listening
 # on the IPv6 "any" address (::) will accept connections from both IPv6
@@ -120,24 +120,16 @@ listen=YES
 # addresses) then you must run two copies of vsftpd with two configuration
 # files.
 # Make sure, that one of the listen options is commented !!
-listen_ipv6=NO
-
+listen_ipv6=YES
 ssl_enable=YES
 rsa_cert_file=/etc/ssl/private/vsftpd.crt
 rsa_private_key_file=/etc/ssl/private/vsftpd.key
-force_local_logins_ssl=YES
 force_local_data_ssl=YES
-
-ssl_tlsv1=YES
-ssl_sslv2=NO
-ssl_sslv3=NO
-
+force_local_logins_ssl=YES
+ssl_ciphers=HIGH:!aNULL:!MD5
 pasv_enable=YES
-pasv_min_port=40000
-pasv_max_port=45000
-
-user_sub_token=$USER
-local_root=/data/ftp/$USER
+pasv_min_port=30000
+pasv_max_port=31000
 
 pam_service_name=vsftpd
 userlist_enable=YES

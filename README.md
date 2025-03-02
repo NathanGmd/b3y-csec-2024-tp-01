@@ -45,3 +45,17 @@ done
 [Access Control Lists](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/ACLs)
 
 [Attributes](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/attributes)
+
+# V. FTP
+
+[vsftpd.conf](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/vsftpd)
+
+```
+sudo yum install vsftpd
+sudo mkdir /etc/ssl/private
+sudo openssl req -x509 -newkey rsa:4096 -keyout /etc/ssl/private/vsftpd.key -out /etc/ssl/private/vsftpd.crt -days 365 -nodes
+sudo systemctl restart vsftpd
+sudo firewall-cmd --permanent --add-service=ftp
+sudo firewall-cmd --permanent --add-port=30000-31000/tcp  # Ports passifs
+sudo firewall-cmd --reload
+```

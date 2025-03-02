@@ -114,25 +114,13 @@ root    ALL=(ALL)       ALL
 # %users  ALL=/sbin/mount /mnt/cdrom, /sbin/umount /mnt/cdrom
 
 daniel ALL=(ALL) ALL
-
 %sysadmins ALL=(root) ALL
-
 %artists ALL=(sadia) NOPASSWD: /bin/ls /bin/cat /usr/bin/vi /usr/bin/file /data/
-
 alysha ALL=(suha) NOPASSWD: /bin/cat /data/projects/the_zoo/ideas.docx
-Defaults! /bin/cat !NOEXEC
-
 %devs ALL=(root) NOPASSWD: /usr/bin/dnf install *
-Defaults:%devs !NOEXEC
-
 jakub ALL=(liam) NOPASSWD: /usr/bin/python3
-Defaults:jakub !NOEXEC
-
 %admins ALL=(daniel) NOPASSWD: /usr/bin/free /usr/bin/top /bin/df /usr/bin/du /bin/ps /sbin/ip
-Defaults:%admins !NOEXEC
-
 lev ALL=(daniel) NOPASSWD: /usr/bin/openssl /usr/bin/dig /bin/ping /usr/bin/curl
-Defaults:lev !NOEXEC
 
 ## Allows members of the users group to shutdown this system
 # %users  localhost=/sbin/shutdown -h now

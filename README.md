@@ -46,7 +46,7 @@ done
 
 [Attributes](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/attributes)
 
-[Attributes](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/sudoers)
+[Sudoers](https://github.com/NathanGmd/b3y-csec-2024-tp-01/blob/main/sudoers)
 
 Alysha a accès à un shell root via cat /idea avec les privilège de suha en admins
 
